@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+	<title>Rechercher un produit logiciel</title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+
+<body>
+  
+  <div id="container" >
+  <h1>Rechercher un produit logiciel</h1>
+<form action="">
+	<fieldset>
+		<label>Titre du Produit:</label>
+		<input type="text" name="titre_composant" />
+		
+		<label for="montant">Coût Minimum:</label>
+		<input id="montant" name="montant" type="number" min="0" max="100000" step="10"> €
+		<label for="montant">Coût Maximum:</label>
+		<input id="montant" name="montant" type="number" min="0" max="100000" step="10"> €
+		
+		<label>Version du Produit:</label>
+		<input type="text" name="version_composant"  />
+	
+		<label>Client:</label>
+		<input type="text" name="version_composant"  />
+		
+		
+		<label> Etat: </label>
+			<select id="etat_logiciel">
+				<option value="exe">En Cours</option>
+				<option value="lib">En Maintenance</option>
+			</select>
+
+		<br><input type="reset" value="Annuler" name="reset" class="reset" />
+		<input type="submit" value="Ajouter" name="submit" class="submit" />
+	
+	<fieldset>
+</form>	
+</div>
+</body>
+</html>

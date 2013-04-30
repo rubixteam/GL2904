@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+	<title>Ajouter un nouveau composant logiciel</title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<!--ajax-->
+		<script type="text/javascript" language="javascript" src="script-composant.js">
+		</script>
+<!--ajax-->
+</head>
+
+<body>
+  
+  <div id="container" >
+  <h1>Ajouter un nouveau composant logiciel</h1>
+<form action="">
+	<fieldset>
+		<label>Titre du Composant:</label>
+		 <input type="text" name="ll"  id="loginform" onkeyup="check()" />
+			<div id="mention"></div>
+		
+		<label>Version du Composant:</label>
+			<input type="text" name="pp" id="pwdform"   />
+			<div id="vide"></div>
+	
+		<label>Type du Composant:</label>
+			<select id="typeform">
+				<option value="Open source">Open Source</option>
+				<option value="Achete">Achete</option>
+				<option value="Developpe en interne">Developpe en interne</option>
+			</select>
+
+		<label> nature </label>
+			<select id="natureform">
+				<option value="exe">exe</option>
+				<option value="lib">lib</option>
+				<option value="dll">dll</option>
+				<option value="src">src</option>
+			</select>
+
+		<label>Licence du Composant</label>
+			<select id="licenceform">
+				<option value="GPL">GPL</option>
+				<option value="LGPL">LGPL</option>
+				<option value="BSD">BSD</option>
+			</select>
+
+
+		<label>Coût</label>
+		<input id="montantform"  type="text" > €
+
+
+	<input type="hidden" id="checkState" /><br>
+			<input type="reset" value="Annuler" name="reset" class="reset" />
+			<input type="button" value="Valider" onclick="checkValidate()" class="submit" />
+			<div id="ajout"></div>
+	
+	<fieldset>
+</form>	
+</div>
+</body>
+</html>

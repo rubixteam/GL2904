@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+	<title>Ajouter un nouveau produit logiciel</title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<!--ajax-->
+		<script type="text/javascript" language="javascript" src="script-produit.js">
+		</script>
+<!--ajax-->
+</head>
+
+<body>
+  
+  <div id="container" >
+  <h1>Ajouter un nouveau produit logiciel</h1>
+<form action="">
+	<fieldset>
+		<label>Titre du Produit:</label>
+		    <input type="text" name="ll"  id="loginform" onkeyup="check()" />
+			<div id="mention"></div>
+		
+		<label>Client:</label>
+			<input type="text" name="pp" id="pwdform"   />
+			<div id="vide"></div>
+	
+	
+	
+		<label>Version:</label>
+		<input type="text" name="version" id="versionform" />
+
+		<label> Etat: </label>
+			<select id="etatform">
+				<option value="En Cours">En Cours</option>
+				<option value="En Maintenance">En Maintenance</option>
+			</select>
+
+	
+	<input type="hidden" id="checkState" /><br>
+			<input type="reset" value="Annuler" name="reset" class="reset" />
+			<input type="button" value="Valider" onclick="checkValidate()" class="submit" />
+			<div id="ajout"></div>
+	
+	<fieldset>
+</form>	
+</div>
+</body>
+</html>
